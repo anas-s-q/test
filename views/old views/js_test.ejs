@@ -1,0 +1,183 @@
+<html>
+<head>
+
+	<title>edite</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="/js/jquery-2.1.4.js"></script>
+	<script src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/test.js"></script>
+</head>
+<body>
+<p><%=title;%></p>
+	<script>
+	function get10array(start) {
+		var data=[];
+		for (i = start; i <= 10 ;i++) {
+			data.push(i);
+		}
+		return data;
+	}
+	function k (){
+    	f = 0
+    	for (i=1 ;i<=10 ;i++ ){
+    		f = f + i
+
+		}
+    	return f;
+    }
+
+	function o (arr){
+    	f = 0
+    	for (i=1 ;i<=arr.length ;i++ ){
+    		f = f + arr[i]
+		}
+    	return f;
+	}
+function val (arr){
+    	f = 1
+    	for (i=0 ;i<arr.length ;i++ ){
+    		f = f * arr[i]
+		}
+    	return f;
+	}
+function valo (){
+    	f = 1
+    	for ( ;i>0;i=i-1 ){
+    		f = f * i
+		}                                                                                                                                                                
+    	return f;
+	}
+function vale (i){
+    	f = 1
+    	for ( ;i>0;i=i-1 ){
+    		f = f / i
+		}                                                                                                                                                                
+    	return f;
+	}
+function max (arr){
+	f = arr[0]
+	for (i=0 ;i < arr.length;i++){
+		max = arr[i]
+		if (f < max){
+		f = max
+
+
+		}	
+
+	}
+		return f;
+
+}
+
+function men (arr){
+	f = arr[0]
+	for (i=0 ;i < arr.length;i++){
+		cur = arr[i]
+		if (f > cur){
+			f = cur
+		}	
+
+	}
+	return f;
+
+}
+
+function avg (arr){
+    	f = arr[0]
+    	for (i=0 ;i<arr.length ;i++ ){
+    		f = f + arr[i]
+		}
+		sum = f / arr.length
+    	return sum;
+	}
+	function  sss(arr) {
+		sum = 0
+		ar = 0
+		avg = 0
+		for (i=0 ; i < arr.length ; i++ ) {
+			if (arr[i] > 0){
+				sum = sum + arr[i] 
+				avg =  avg +1
+			}
+		}
+		ar = sum / avg
+						
+		return ar;
+
+
+	}
+	function ttt (k,n){
+		var a=1  
+			m = 0
+		for (i=0;i<n;i++){
+			a = a + 1
+
+			m = k/a 
+		}
+          
+		return m;
+
+	}
+function uuu (k){
+		 a=1  
+	     f = 1
+	     s =0
+		for (i=0;i<k;i++){
+			
+			a = a + 1
+			
+			s = f/a
+			
+		}
+          
+		return s;
+	}
+function myArr (j,n){
+		a = []
+		i = 0
+		b = 0
+		m = 0
+		
+
+		for (;i <= j ;i++ ){
+			b = b + 1
+			m = n/b 
+			
+			a.push(m);
+		}
+
+return a ;
+}
+function mySum (arr){
+		var a=0
+		for (i=0;i<arr.length;i++){
+			a+=arr[i]
+
+		};
+return a;
+};
+function myAvg(arr){
+	return mySum (arr)/arr.length
+};
+
+function myFunk(){
+
+
+
+
+}
+//mawqe3 raeesy
+//https://www.google.jo/search?q=bootstrap+admin&oq=bootstrap+admin&aqs=chrome.0.69i59j69i57.4887j0j7&sourceid=chrome&es_sm=93&ie=UTF-8
+//mawqe3 far3ee
+//http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/pages/index.html
+// raabet altanzeel
+//https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/archive/v1.0.7.zip
+
+</script>
+</body>
+</html>
