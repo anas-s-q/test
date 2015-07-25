@@ -9,12 +9,12 @@ router.get('/', function(req, res, next) {
 	});
 });
 
-router.get('/schooler/', function(req, res, next) {
+router.get('/scholar/', function(req, res, next) {
 	res.render('template', {
-		title: 'schooler',
-		viewFile: 'pages/schooler',
-		scriptsList:[],
-		cssList:[]
+		title: 'scholar',
+		viewFile: 'pages/scholar',
+		scriptsList:["datatables"],
+		cssList:["datatables","datatables-responsive"]
 	});
 });
 
@@ -28,10 +28,9 @@ router.get('/dashboard/', function(req, res, next) {
 });
 
 router.get('/tables/', function(req, res, next) {
-	getScholarsFromDB
-
+	//getScholarsFromDB
 	res.render('template', {
-		scholar:scholar,
+		//scholar:scholar,
 		title:"Tables",
 		viewFile: 'pages/tables',
 		scriptsList:["datatables"],
@@ -169,3 +168,6 @@ router.get('/anas6/', function(req, res, next) {
 */
 
 module.exports = router;
+
+
+  // http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/pages/index.html
