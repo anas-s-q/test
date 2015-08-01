@@ -11,12 +11,48 @@ router.get('/', function(req, res, next) {
 
 router.get('/scholar/', function(req, res, next) {
 	res.render('template', {
-		title: 'scholar',
+		title: 'Scholar',
 		viewFile: 'pages/scholar',
 		scriptsList:["datatables"],
 		cssList:["datatables","datatables-responsive"]
 	});
 });
+
+router.get('/add-scholar/', function(req, res, next) {
+	res.render('template', {
+		title: 'Add Scholar',
+		viewFile: 'pages/add-scholar',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+router.get('/semester-data/', function(req, res, next) {
+	res.render('template', {
+		title: 'Semester Data',
+		viewFile: 'pages/semester-data',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/dardashat/', function(req, res, next) {
+	res.render('template', {
+		title: 'Dardashat',
+		viewFile: 'pages/dardashat',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/enrichment/', function(req, res, next) {
+	res.render('template', {
+		title: 'Enrichment',
+		viewFile: 'pages/enrichment',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
 
 router.get('/dashboard/', function(req, res, next) {
 	res.render('template', {
