@@ -11,80 +11,68 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-								<label>Semester</label><br>
-								<select name="Nationality">
+								<label>Semester</label>
+								<select class="form-control">
 									<option value="Nationality">First Semester</option>
 									<option value="Nationality">Second Semester</option>
 									<option value="Nationality">Summer Semester</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-							<div>
-							<!--number-->
-								<label>Date Or Period</label>
-								<br>
-							 
-								<label>day</label><br>
-								<input type="dateday" name="day" max ="30" min = "1"><br>
-								<label>month</label><br>
-								<input type="datemonth" name="month" max = "12" min = "1"><br>
-								<label> year</label><br>
-								<input type="dateyear" name="year"  min = "1900"><br>
-								<input type="submit">
-							</div><br>
+							</div>
 							<div class="form-group">
-								<label>Type</label><br>
-								<select name="Nationality">
+								<label>Date Or Period</label>
+							</div>
+							<div class="input-group date">
+								<input type="text" class="form-control">
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-th"></i>
+								</span>
+							</div>
+							<div class="form-group">
+								<label>Type</label>
+								<select class="form-control">
 									<option value="Nationality">Workshop / Training</option>
 									<option value="Nationality">ICDL</option>
 									<option value="Nationality">English</option>
 									<option value="Nationality">Business </option>
 									<option value="Nationality">Conference</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
+							</div>
 							<div class="form-group">
                                 <label>Subject</label>
-								<br>
-								<input type="text" name="name">
-							</div><br>
+								<input type="text" name="name" class="form-control">
+							</div>
 							<div class="form-group">
                                 <label>Description</label>
                                 <textarea class="form-control" rows="3"></textarea>
-                            </div><br>
-                            <div>
-								<label>Facilitator</label><br>  
-								<input type="radio" name="yes" value="yes" >Internal
-								<br>
-								<input type="radio" name="no" value="no">External
-								<br>
-								<input type="radio" name="no" value="no">(If Internal: Name / Text)
-								<br>
-								<input type="radio" name="no" value="no">(If External: Name / Text + Organization / Text + Email / Text + Mobile / Number)
-							</div><br>
+                            </div>
+							<div class="form-group">
+                                <label>Facilitator</label>
+                                <div class="radio">
+	                                <label>
+	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Internal
+	                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">External
+                                    </label>
+                                </div>
+                                <div class="radio">
+	                                <label>
+	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>(If planned to attend: Below options)
+	                                </label>
+                            </div>
 							<div class="form-group">
                                 <label>Material</label>
-								<br>
-								<input type="text" name="name">
-							</div><br>
+								<input type="text" name="name" class="form-control">
+							</div>
 							<div class="form-group">
                                 <label>Notes</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
 
-                            <!-- Attendance and Norms for each current scholar -->
-
-
-
-
-
-
-
-									
-								<br><br><br><br><br><br>
-						</form>											
+                            <!-- Attendance and Norms for each current scholar -->		
+                        </form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
                 </div>

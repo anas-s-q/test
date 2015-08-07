@@ -26,6 +26,7 @@ router.get('/add-scholar/', function(req, res, next) {
 		cssList:[]
 	});
 });
+
 router.get('/semester-data/', function(req, res, next) {
 	res.render('template', {
 		title: 'Semester Data',
@@ -53,6 +54,86 @@ router.get('/enrichment/', function(req, res, next) {
 	});
 });
 
+router.get('/service-schedule/', function(req, res, next) {
+	res.render('template', {
+		title: 'Community Service Schedule',
+		viewFile: 'pages/service-schedule',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/service-attendance/', function(req, res, next) {
+	res.render('template', {
+		title: 'Community Service Attendance',
+		viewFile: 'pages/service-attendance',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/evaluation/', function(req, res, next) {
+	res.render('template', {
+		title: 'Evaluation',
+		viewFile: 'pages/evaluation',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/notes/', function(req, res, next) {
+	res.render('template', {
+		title: 'Notes',
+		viewFile: 'pages/notes',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/official-letters/', function(req, res, next) {
+	res.render('template', {
+		title: 'Official Letters',
+		viewFile: 'pages/official-letters',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/contacts/', function(req, res, next) {
+	res.render('template', {
+		title: 'Contacts',
+		viewFile: 'pages/contacts',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/highlights/', function(req, res, next) {
+	res.render('template', {
+		title: 'Highlights',
+		viewFile: 'pages/highlights',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-scholars/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Scholars',
+		viewFile: 'pages/view-scholars',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/notify-me-when/', function(req, res, next) {
+	res.render('template', {
+		title: 'Notify me when',
+		viewFile: 'pages/notify-me-when',
+		scriptsList:[],
+		cssList:[]
+	});
+});
 
 router.get('/dashboard/', function(req, res, next) {
 	res.render('template', {

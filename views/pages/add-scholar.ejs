@@ -1,86 +1,321 @@
 <!DOCTYPE html>
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Personal
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form role="form">
-                            <div class="form-group">
-                                <label>Tixt enbut</label>
-                                <input class="form-control">
-                                <p class="help-block">Example block-level help text here.</p>
-                            </div>
-                            <!-- name = "firstname" name = "lastname"-->
-							<div>
+        <form role="form">
+            <!-- name = "firstname" name = "lastname"-->
+            <div class="panel panel-default">
+				<div class="panel-heading">
+					Name Enghish
+				</div>
+				<div class="panel-body">
+					<div class="row">
+    					<div class="col-lg-6">
+							<div class="form-group">
 							    <label>First Name English</label>
-								 <br>
-								<input type="text" name="firstname">
-								<br>
+								<input type="text" name="firstname" class="form-control">
+							</div>
+							<div class="form-group">
 								<label>Father's Name English</label>
-								 <br>
-								<input type="text" name="lastname">
-								<br><label>Family Name English </label>
-								<br>
-								<input type="text" name="lastname">
+								<input type="text" name="lastname" class="form-control">
 							</div>
-							<div flot :"right">
-								<br><label>First Name Arabic </label>
-								<br>
-								<input type="text" name="firstname">
-								<br><label>Father's Name Arabic </label>
-								<br>
-								<input type="text" name="lastname">
-								<br><label>Family Name Arabic </label>
-								<br>
-								<input type="text" name="lastname">
-								<br><br>
-								<!--<input type="submit" value="Submit">-->
-							 </div>
-
-							<br><br>
-							<div>
-								<label>Sex</label><br>
-								<input type="radio" name="sex" value="male" >Male
-								<br>
-								<input type="radio" name="sex" value="female">Female
+							<div class="form-group">
+								<label>Family Name English </label>
+								<input type="text" name="lastname" class="form-control">
 							</div>
-							<br><br>
-							<div>
-								<label>Nationality</label><br>
-								<select name="Nationality">
-									<option value="Nationality">Jordanian </option>
-									<option value="Nationality">Palestinian</option>
-									<option value="Nationality">Gazan </option>
-									<option value="Nationality">Syrian</option>
-									<option value="Nationality">Iraqi</option>
-									<option value="Nationality">Egyptian</option>
-									<option value="Nationality">Lebanese</option>
-									<option value="Nationality">Other Arab</option>
-									<option value="Nationality"> Other</option>				
-								</select>
-								<br><br>
-								<input type="submit">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Name Arabic
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+							    <label>First Name Arabic</label>
+								<input type="text" name="firstname" class="form-control">
 							</div>
-						</form>											
-                    </div>
-                    <!-- /.col-lg-6 (nested) -->
+							<div class="form-group">
+								<label>Father's Name Arabic</label>
+								<input type="text" name="lastname" class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Family Name Arabic </label>
+								<input type="text" name="lastname" class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+                <label>Sex</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Male
+                    </label>
                 </div>
-                <!-- /.row (nested) -->
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Female
+                    </label>
+                </div>
             </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-									
-<div class="row">
-    <div class="col-lg-12">
+			<div class="form-group">
+				<label>Nationality</label><br>
+				<select class="form-control">
+					<option value='JO'>Jordanian </option>
+					<option value='PS'>Palestinian</option>
+					<option value='GZ'>Gazan</option>
+					<option value='SY'>Syrian</option>
+					<option value='IQ'>Iraqi</option>
+					<option value='EG'>Egyptian</option>
+					<option value='LB'>Lebanese</option>
+					<optgroup label="Other Arab">
+						<option value="Nationality">All Arab Countires List</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value='AF'>Afghan</option>
+						<option value='AL'>Albanian</option>
+						<option value='DZ'>Algerian</option>
+						<option value='US'>American</option>
+						<option value='AS'>American Samoan</option>
+						<option value='AD'>Andorran</option>
+						<option value='AO'>Angolan</option>
+						<option value='AI'>Anguillan</option>
+						<option value='AQ'>Antarctican</option>
+						<option value='AG'>Antigua and Barbuda national</option>
+						<option value='AN'>Antillean</option>
+						<option value='AR'>Argentinian</option>
+						<option value='AM'>Armenian</option>
+						<option value='AW'>Aruban</option>
+						<option value='AU'>Australian</option>
+						<option value='AT'>Austrian</option>
+						<option value='AZ'>Azerbaijani</option>
+						<option value='BS'>Bahamian</option>
+						<option value='BH'>Bahraini</option>
+						<option value='BD'>Bangladeshi</option>
+						<option value='BB'>Barbadian</option>
+						<option value='LS'>Basotho</option>
+						<option value='BY'>Belarusian</option>
+						<option value='BE'>Belgian</option>
+						<option value='BZ'>Belizean</option>
+						<option value='BJ'>Beninese</option>
+						<option value='BM'>Bermudian</option>
+						<option value='BT'>Bhutanese</option>
+						<option value='BO'>Bolivian</option>
+						<option value='BA'>Bosnia and Herzegovina national</option>
+						<option value='BW'>Botswanan</option>
+						<option value='BV'>Bouvet Island</option>
+						<option value='BR'>Brazilian</option>
+						<option value='IO'>British Indian Ocean Territory</option>
+						<option value='VG'>British Virgin Islander</option>
+						<option value='UK'>Briton</option>
+						<option value='BN'>Bruneian</option>
+						<option value='BG'>Bulgarian</option>
+						<option value='BF'>Burkinabe</option>
+						<option value='MM'>Burmese</option>
+						<option value='BI'>Burundian</option>
+						<option value='KH'>Cambodian</option>
+						<option value='CM'>Cameroonian</option>
+						<option value='CA'>Canadian</option>
+						<option value='CV'>Cape Verdean</option>
+						<option value='KY'>Caymanian</option>
+						<option value='CF'>Central African</option>
+						<option value='TD'>Chadian</option>
+						<option value='CL'>Chilean</option>
+						<option value='CN'>Chinese</option>
+						<option value='CX'>Christmas Islander</option>
+						<option value='CC'>Cocos Islander</option>
+						<option value='CO'>Colombian</option>
+						<option value='KM'>Comorian</option>
+						<option value='CG'>Congolese</option>
+						<option value='CD'>Congolese</option>
+						<option value='CK'>Cook Islander</option>
+						<option value='CR'>Costa Rican</option>
+						<option value='HR'>Croat</option>
+						<option value='CU'>Cuban</option>
+						<option value='CY'>Cypriot</option>
+						<option value='CZ'>Czech</option>
+						<option value='DK'>Dane</option>
+						<option value='DJ'>Djiboutian</option>
+						<option value='DO'>Dominican</option>
+						<option value='DM'>Dominican</option>
+						<option value='TL'>East Timorese</option>
+						<option value='EC'>Ecuadorian</option>
+						<option value='AE'>Emirian</option>
+						<option value='GQ'>Equatorial Guinean</option>
+						<option value='ER'>Eritrean</option>
+						<option value='EE'>Estonian</option>
+						<option value='ET'>Ethiopian</option>
+						<option value='FO'>Faeroese</option>
+						<option value='FK'>Falkland Islander</option>
+						<option value='FJ'>Fiji Islander</option>
+						<option value='PH'>Filipino</option>
+						<option value='FI'>Finn</option>
+						<option value='FR'>French</option>
+						<option value='TF'>French Southern Territories</option>
+						<option value='GA'>Gabonese</option>
+						<option value='GM'>Gambian</option>
+						<option value='GE'>Georgian</option>
+						<option value='DE'>German</option>
+						<option value='GH'>Ghanaian</option>
+						<option value='GI'>Gibraltarian</option>
+						<option value='GR'>Greek</option>
+						<option value='GL'>Greenlander</option>
+						<option value='GD'>Grenadian</option>
+						<option value='GP'>Guadeloupean</option>
+						<option value='GU'>Guamanian</option>
+						<option value='GT'>Guatemalan</option>
+						<option value='GF'>Guianese</option>
+						<option value='GW'>Guinea-Bissau national</option>
+						<option value='GN'>Guinean</option>
+						<option value='GY'>Guyanese</option>
+						<option value='HT'>Haitian</option>
+						<option value='HM'>Heard Island and McDonald Islands</option>
+						<option value='HN'>Honduran</option>
+						<option value='HK'>Hong Kong Chinese</option>
+						<option value='HU'>Hungarian</option>
+						<option value='IS'>Icelander</option>
+						<option value='IN'>Indian</option>
+						<option value='ID'>Indonesian</option>
+						<option value='IR'>Iranian</option>
+						<option value='IE'>Irish</option>
+						<option value='IL'>Israeli</option>
+						<option value='IT'>Italian</option>
+						<option value='CI'>Ivorian</option>
+						<option value='JM'>Jamaican</option>
+						<option value='JP'>Japanese</option>
+						<option value='KZ'>Kazakh</option>
+						<option value='KE'>Kenyan</option>
+						<option value='KI'>Kiribatian</option>
+						<option value='KW'>Kuwaiti</option>
+						<option value='KG'>Kyrgyz</option>
+						<option value='LA'>Lao</option>
+						<option value='LV'>Latvian</option>
+						<option value='LR'>Liberian</option>
+						<option value='LY'>Libyan</option>
+						<option value='LI'>Liechtensteiner</option>
+						<option value='LT'>Lithuanian</option>
+						<option value='LU'>Luxembourger</option>
+						<option value='MO'>Macanese</option>
+						<option value='MK'>Macedonian</option>
+						<option value='YT'>Mahorais</option>
+						<option value='MG'>Malagasy</option>
+						<option value='MW'>Malawian</option>
+						<option value='MY'>Malaysian</option>
+						<option value='MV'>Maldivian</option>
+						<option value='ML'>Malian</option>
+						<option value='MT'>Maltese</option>
+						<option value='MH'>Marshallese</option>
+						<option value='MQ'>Martinican</option>
+						<option value='MR'>Mauritanian</option>
+						<option value='MU'>Mauritian</option>
+						<option value='MX'>Mexican</option>
+						<option value='FM'>Micronesian</option>
+						<option value='MD'>Moldovan</option>
+						<option value='MC'>Monegasque</option>
+						<option value='MN'>Mongolian</option>
+						<option value='ME'>Montenegrian</option>
+						<option value='MS'>Montserratian</option>
+						<option value='MA'>Moroccan</option>
+						<option value='MZ'>Mozambican</option>
+						<option value='NA'>Namibian</option>
+						<option value='NR'>Nauruan</option>
+						<option value='NP'>Nepalese</option>
+						<option value='NL'>Netherlander</option>
+						<option value='NC'>New Caledonian</option>
+						<option value='NZ'>New Zealander</option>
+						<option value='NI'>Nicaraguan</option>
+						<option value='NG'>Nigerian</option>
+						<option value='NE'>Nigerien</option>
+						<option value='NU'>Niuean</option>
+						<option value='NF'>Norfolk Islander</option>
+						<option value='KP'>North Korean</option>
+						<option value='MP'>Northern Mariana Islander</option>
+						<option value='NO'>Norwegian</option>
+						<option value='OM'>Omani</option>
+						<option value='PK'>Pakistani</option>
+						<option value='PW'>Palauan</option>
+						<option value='PA'>Panamanian</option>
+						<option value='PG'>Papua New Guinean</option>
+						<option value='PY'>Paraguayan</option>
+						<option value='PE'>Peruvian</option>
+						<option value='PN'>Pitcairner</option>
+						<option value='PL'>Pole</option>
+						<option value='PF'>Polynesian</option>
+						<option value='PT'>Portuguese</option>
+						<option value='PR'>Puerto Rican</option>
+						<option value='QA'>Qatari</option>
+						<option value='RE'>Reunionese</option>
+						<option value='RO'>Romanian</option>
+						<option value='RU'>Russian</option>
+						<option value='RW'>Rwandan</option>
+						<option value='EH'>Sahrawi</option>
+						<option value='SH'>Saint Helenian</option>
+						<option value='KN'>Saint Kitts and Nevis national</option>
+						<option value='LC'>Saint Lucian</option>
+						<option value='PM'>Saint Pierre and Miquelon national</option>
+						<option value='SV'>Salvadorian</option>
+						<option value='WS'>Samoan</option>
+						<option value='SM'>San Marinese</option>
+						<option value='ST'>São Toméan</option>
+						<option value='SA'>Saudi Arabian</option>
+						<option value='SN'>Senegalese</option>
+						<option value='RS'>Serbian</option>
+						<option value='SC'>Seychellois</option>
+						<option value='SL'>Sierra Leonean</option>
+						<option value='SG'>Singaporean</option>
+						<option value='SK'>Slovak</option>
+						<option value='SI'>Slovene</option>
+						<option value='SB'>Solomon Islander</option>
+						<option value='SO'>Somali</option>
+						<option value='ZA'>South African</option>
+						<option value='GS'>South Georgia and the South Sandwich Islands</option>
+						<option value='KR'>South Korean</option>
+						<option value='ES'>Spaniard</option>
+						<option value='LK'>Sri Lankan</option>
+						<option value='SD'>Sudanese</option>
+						<option value='SR'>Surinamer</option>
+						<option value='SJ'>Svalbard and Jan Mayen</option>
+						<option value='SZ'>Swazi</option>
+						<option value='SE'>Swede</option>
+						<option value='CH'>Swiss</option>
+						<option value='TW'>Taiwanese</option>
+						<option value='TJ'>Tajik</option>
+						<option value='TZ'>Tanzanian</option>
+						<option value='TH'>Thai</option>
+						<option value='TG'>Togolese</option>
+						<option value='TK'>Tokelauan</option>
+						<option value='TO'>Tongan</option>
+						<option value='TT'>Trinidad and Tobago national</option>
+						<option value='TN'>Tunisian</option>
+						<option value='TR'>Turk</option>
+						<option value='TM'>Turkmen</option>
+						<option value='TC'>Turks and Caicos Islander</option>
+						<option value='TV'>Tuvaluan</option>
+						<option value='UG'>Ugandan</option>
+						<option value='UA'>Ukrainian</option>
+						<option value='UM'>United States Minor Outlying Islands</option>
+						<option value='UY'>Uruguayan</option>
+						<option value='VI'>US Virgin Islander</option>
+						<option value='UZ'>Uzbek</option>
+						<option value='VU'>Vanuatuan</option>
+						<option value='VA'>Vatican</option>
+						<option value='VE'>Venezuelan</option>
+						<option value='VN'>Vietnamese</option>
+						<option value='VC'>Vincentian</option>
+						<option value='WF'>Wallis and Futuna Islander</option>
+						<option value='YE'>Yemeni</option>
+						<option value='ZM'>Zambian</option>
+						<option value='ZW'>Zimbabwean</option>
+						<option value='AX'>Åland Islander</option>
+					</optgroup>
+					<option value="XX">Other</option>
+				</select>
+			</div>
+		</form>
         <div class="panel panel-default">
             <div class="panel-heading">
              Contact 
@@ -89,102 +324,36 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <form role="form">
-                            <div class="form-group">									
-
-								<label>ID # </label><br>
-																		 
-								  <input type="number">
+                            <div class="form-group">
+								<label>ID # </label>
+								  <input type="number" class="form-control">
 							</div>
-							<br><br>
-							<div>
-							<!--number-->
+							<div class="form-group">
 								<label>Date of Birth</label>
-								<br>
-							 
-								
-								<div>
-								<label>day</label><br>
-								<select name="Nationality">
-									<option value="Nationality">1</option>
-									<option value="Nationality">2</option>
-									<option value="Nationality">3</option>
-									<option value="Nationality">4</option>
-									<option value="Nationality">5</option>
-									<option value="Nationality">6</option>
-									<option value="Nationality">7</option>
-									<option value="Nationality">8</option>
-									<option value="Nationality">9</option>
-									<option value="Nationality">10</option>
-									<option value="Nationality">11</option>
-									<option value="Nationality">12</option>
-									<option value="Nationality">13</option>
-									<option value="Nationality">14</option>
-									<option value="Nationality">15</option>
-									<option value="Nationality">16</option>
-									<option value="Nationality">17</option>
-									<option value="Nationality">18</option>
-									<option value="Nationality">19</option>
-									<option value="Nationality">20</option>
-									<option value="Nationality">21</option>
-									<option value="Nationality">22</option>
-									<option value="Nationality">23</option>
-									<option value="Nationality">24</option>
-									<option value="Nationality">25</option>
-									<option value="Nationality">26</option>
-									<option value="Nationality">27</option>
-									<option value="Nationality">28</option>
-									<option value="Nationality">29</option>
-									<option value="Nationality">30</option>
-									<option value="Nationality">31</option>								
-								</select>
-								
-							</div><br>
-								
-								<div>
-								<label>month</label><br>
-								<select name="Nationality">
-									<option value="Nationality">1</option>
-									<option value="Nationality">2</option>
-									<option value="Nationality">3</option>
-									<option value="Nationality">4</option>
-									<option value="Nationality">5</option>
-									<option value="Nationality">6</option>
-									<option value="Nationality">7</option>
-									<option value="Nationality">8</option>
-									<option value="Nationality">9</option>
-									<option value="Nationality">10</option>
-									<option value="Nationality">11</option>
-									<option value="Nationality">12</option>								
-								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-								
-							<div>
-								<label> year</label><br>
-								<input type="dateyear" name="year"  min = "1900"><br>								
-								<br><br>
-								<input type="submit">
-
-							</div><br>
-							</div><br>
-							<div>
-								<label>Mobile # 1</label><br> 
-								<input type="tel" name="usrtel">
-								<input type="submit">
 							</div>
-							<div>
-								<label>Mobile # 2</label><br>
-								<input type="tel" name="usrtel">
-								<input type="submit">
+							<div class="input-group date">
+								<input type="text" class="form-control">
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-th"></i>
+								</span>
 							</div>
-							<br><br>
-							<div>
-								<label>E-mail</label><br> 
-								<input type="email" name="email">
-								<input type="submit">
+							<div class="form-group">
+								<label>Mobile # 1</label>
+								<input type="tel" name="usrtel" class="form-control">
+								
 							</div>
-							<br><br>
+							<div class="form-group">
+								<label>Mobile # 2</label>
+								<input type="tel" name="usrtel" class="form-control">
+								
+							</div>
+							
+							<div class="form-group">
+								<label>E-mail</label>
+								<input type="email" name="email" class="form-control">
+								
+							</div>
+							
 
 						</form>											
                     </div>
@@ -195,16 +364,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-
-
-
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Family and Finances
@@ -213,74 +372,90 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <form role="form">
-                            <div class="radio"><!-- radyu is not work-->
-                                <label>Finished Diplome Earlier <br>
-                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">Yes
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
-                                </label>
-                            </div>
-								<br>
-							<div>
-								<label>Other Available Scholarship Support</label><br>  
-								<input type="radio" name="yes" value="yes" >Yes
-								<br>
-								<input type="radio" name="no" value="no">NO
-							</div>
-							<div>
-								<label>Father Full Name </label>
-								<br>
-								<input type="text" name="firstname">
-								<br>
-							</div>
-							<div>
-								<label>Father ID #</label><br>							 
-								<input type="number">
-							</div>
-							<br><br>
-							<div>
-								<label>Mother Full Name </label>
-								<br>
-								<input type="text" name="firstname">
-								<br>
-							</div>
-							<div>
-								<label>Mother ID #</label><br>										 
-								<input type="number">
-							</div>
-							<br><br>
-							<div>
-								<label># Members in Family at Home</label><br>					
-								<input type="number">
-							</div>
-							<br><br>
-							<div>
-								<label>Total Monthly Income</label><br>							
-								<input type="number">
-							</div>
-							<br><br>
-							<div>
-								<label>Total Monthly Expenditure</label><br>						
-								<input type="number">
-							</div>
-							<br><br>
 							<div class="form-group">
-                                <label>Income Resources</label><br>
+                                <label>Relatives within the scholarship</label>
+                                <div class="radio">
+	                                <label>
+	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    </label>
+                                </div>
+							</div>
+							<div class="form-group">
+                                <label>Other Available Scholarship Support</label>
+                                <div class="radio">
+	                                <label>
+	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    </label>
+                                </div>
+							</div>
+							<div class="form-group">
+								<label>Father Full Name </label>
+								
+								<input type="text" name="firstname" class="form-control">
+								
+							</div>
+							<div class="form-group">
+								<label>Father ID #</label>							 
+								<input type="number" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label>Mother Full Name </label>
+								
+								<input type="text" name="firstname" class="form-control">
+								
+							</div>
+							<div class="form-group">
+								<label>Mother ID #</label>									 
+								<input type="number" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label># Members in Family at Home</label>					
+								<input type="number" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label>Total Monthly Income</label>							
+								<input type="number" class="form-control">
+							</div>
+							
+							<div class="form-group">
+								<label>Total Monthly Expenditure</label>					
+								<input type="number" class="form-control">
+							</div>
+							
+							<div class="form-group">
+                                <label>Income Resources</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Financial Situation Description</label><br>
+                                <label>Financial Situation Description</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
-                            <div>
-                                <label>National Aid</label><br> 
-								<input type="radio" name="yes" value="yes" >Yes
-								<br>
-								<input type="radio" name="no" value="no">NO
-							</div> 
+							<div class="form-group">
+                                <label>National Aid</label>
+                                <div class="radio">
+	                                <label>
+	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    </label>
+                                </div>
+							</div>
 						</form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
@@ -290,14 +465,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Address
@@ -307,31 +474,29 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-                            	<label>Address</label> <br>
-								<select name="Address">
-								<option value="Address">Tafileh</option>
-								<option value="Address">Amman</option>
-								<option value="Address">Zarqa</option>
-								<option value="Address">Balqa</option>
-								<option value="Address">Madaba</option>
-								<option value="Address">Mafraq</option>
-								<option value="Address">Ajloun</option>
-								<option value="Address">Jerash</option>
-								<option value="Address">Irbid</option>
-								<option value="Address">Karak</option>
-								<option value="Address">Ma'an</option>
-								<option value="Address">Aqaba</option>					
+                            	<label>Governorate</label>
+								<select class="form-control">
+									<option value="Address">Tafileh</option>
+									<option value="Address">Amman</option>
+									<option value="Address">Zarqa</option>
+									<option value="Address">Balqa</option>
+									<option value="Address">Madaba</option>
+									<option value="Address">Mafraq</option>
+									<option value="Address">Ajloun</option>
+									<option value="Address">Jerash</option>
+									<option value="Address">Irbid</option>
+									<option value="Address">Karak</option>
+									<option value="Address">Ma'an</option>
+									<option value="Address">Aqaba</option>					
 								</select>
-								<br><br>
-								<input type="submit">
-							</div>
-							<div>
-								<label>Area</label> <br>
-								<input type="text" name="firstname">
-								<br>
 							</div>
 							<div class="form-group">
-                                <label>Street & Location</label><br>
+								<label>Area</label>
+								<input type="text" name="firstname"  class="form-control">
+							
+							</div>
+							<div class="form-group">
+                                <label>Street & Location</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
  						</form>											
@@ -343,14 +508,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Tawjihi
@@ -360,48 +517,45 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-								<label>School </label><br>
-								<input type="text" name="firstname">
-								<br>
+								<label>School </label>
+								<input type="text" name="firstname"  class="form-control">
+								
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Tawjihi Stream </label>
-								<br>
-								<select name="Tawjihi Stream">
-								<option value="Address">Scientific </option>
-								<option value="Address"> Literary</option>
-								<option value="Address"> IT </option>
-								<option value="Address">Sharia'</option>
-								<option value="Address"> Commercial</option>
-								<option value="Address">Hospitality</option>
-								<option value="Address"> Industrial</option>
-								<option value="Address"> Agricultural</option>
-								<option value="Address">Comprehensive</option>
-								<option value="Address">Health Education</option>
-								<option value="Address"> Home Economics</option>				
+								
+								<select class="form-control">
+									<option value="Address">Scientific </option>
+									<option value="Address"> Literary</option>
+									<option value="Address"> IT </option>
+									<option value="Address">Sharia'</option>
+									<option value="Address"> Commercial</option>
+									<option value="Address">Hospitality</option>
+									<option value="Address"> Industrial</option>
+									<option value="Address"> Agricultural</option>
+									<option value="Address">Comprehensive</option>
+									<option value="Address">Health Education</option>
+									<option value="Address"> Home Economics</option>				
 								</select>
-								<br><br>
-								<input type="submit">
 							</div>
-							<br>
-							<div>
-								<label>Year of graduation </label> <br>
-								<input type="dateyear" name="year"  min = "1900">
-								</div><br>
-							<div>
-								<label>Semester of graduation </label> <br>
-								<select name="Semester of graduation">
-								<option value="Address">First Semester </option>
-								<option value="Address">Second Semester </option>
-								<option value="Address"> Summer Semester</option>				</select>
-								<br><br>
-								<input type="submit">
+							
+							<div class="form-group">
+								<label>Year of graduation </label>
+								<input type="dateyear" name="year"  min = "1900"  class="form-control">
+								</div>
+							<div class="form-group">
+								<label>Semester of graduation </label> 
+								<select class="form-control">
+									<option value="Address">First Semester </option>
+									<option value="Address">Second Semester </option>
+									<option value="Address"> Summer Semester</option>				
+								</select>
 							</div>
-							<div>
-								<label>GPA</label><br>							
-								<input type="number">
+							<div class="form-group">
+								<label>GPA</label>						
+								<input type="number"  class="form-control">
 							</div>
-							<br><br><hr>
+						
 						</form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
@@ -411,15 +565,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-								
-								</form>
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 College
@@ -429,127 +574,143 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-								<label>Finished Diplome Earlier</label><br> 
-								<input type="radio" name="yes" value="yes" >Yes
-								<br>
-								<input type="radio" name="no" value="no">NO
+								<label>Finished Diplome Earlier</label>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="finish_diplome" id="optionsRadios1" value="1">Yes
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="finish_diplome" id="optionsRadios1" value="0">No
+	                                </label>
+                                </div>
 							</div>
-							<br>
-							<div>
-								<label>College Name</label><br> 
-								<select name="College Name">
-								<option value="Address">Amman College</option>
-								<option value="Address">Amman Engineering Technology College</option>
-								<option value="Address">Princess Alia College </option>
-								<option value="Address"> Salt College</option>
-								<option value="Address"> Zarqa Public College</option>
-								<option value="Address"> Irbid  College</option>
-								<option value="Address"> Al Husun College</option>
-								<option value="Address"> Al Karak College</option>
-								<option value="Address"> Ajloun College</option>
-								<option value="Address">Tafila College </option>
-								<option value="Address"> Ma’an College</option>
-								<option value="Address"> Shobak College</option>
-								<option value="Address"> Dawa and Religion Fundamentals College</option>
-								<option value="Address"> Royal Jordanian Geographic Center College</option>
-								<option value="Address"> Islamic Sciences College</option>
-								<option value="Address"> Princess Rahma Social Work College</option>
-								<option value="Address"> Queen Noor College</option>
-								<option value="Address"> Aqaba College</option>
-								<option value="Address">AlQadisia College</option>
-								<option value="Address"> Khawarizmi College</option>
-								<option value="Address">Amman Community College</option>
-								<option value="Address"> Arab College</option>
-								<option value="Address">Queen Alia College</option>
-								<option value="Address"> Al Quds College</option>
-								<option value="Address">AlAndalus College</option>
-								<option value="Address">Intermediate University College</option>
-								<option value="Address"> Hiteen College</option>
-								<option value="Address"> Princess Tharwat College</option>
-								<option value="Address"> Islamic Community College</option>
-								<option value="Address"> Qurtoba College</option>
-								<option value="Address">Zarqa Private College</option>
-								<option value="Address"> Granada College</option>
-								<option value="Address">Alrazi College</option>
-								<option value="Address"> Ibn Khaldun College</option>
-								<option value="Address">Mafraq Private College</option>
-								<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
-								<option value="Address">Banking Studies College</option>
-								<option value="Address">Jordanian College for Science and Technology</option>
-								<option value="Address"> Jordanian Canadian College</option>
-								<option value="Address"> Complimentary Medical Professions College</option>
-								<option value="Address"> Rufaida Alaslamiya College</option>
-								<option value="Address">Nusaiba Almaznia College</option>
-								<option value="Address"> Medical Services College</option>
-								<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
-								<option value="Address"> Prince Hasan Islamic Sciences College </option>
-								<option value="Address"> Prince Hussein Bin Abdallah College</option>
-								<option value="Address">Prince Faisal College</option>
-								<option value="Address"> Wadi Alseer College</option>
-								<option value="Address">Amman Training College</option>			
+							<script type="text/javascript">
+								function prepareCollege(){
+									var radioObj=$('input[type=radio][name=finish_diplome]:checked')
+							        if (radioObj.val() == '1') {
+							            radioObj.closest(".form-group").nextAll().show();
+							        }else{
+							            radioObj.closest(".form-group").nextAll().hide();
+							        }
+								}
+							    $(function(){
+							    	$('input[type=radio][name=finish_diplome]').change(prepareCollege);
+							    	prepareCollege();
+							    });
+							</script>
+							<div class="form-group">
+								<label>College Name</label>
+								<select class="form-control">
+									<option value="Address">Amman College</option>
+									<option value="Address">Amman Engineering Technology College</option>
+									<option value="Address">Princess Alia College </option>
+									<option value="Address"> Salt College</option>
+									<option value="Address"> Zarqa Public College</option>
+									<option value="Address"> Irbid  College</option>
+									<option value="Address"> Al Husun College</option>
+									<option value="Address"> Al Karak College</option>
+									<option value="Address"> Ajloun College</option>
+									<option value="Address">Tafila College </option>
+									<option value="Address"> Ma’an College</option>
+									<option value="Address"> Shobak College</option>
+									<option value="Address"> Dawa and Religion Fundamentals College</option>
+									<option value="Address"> Royal Jordanian Geographic Center College</option>
+									<option value="Address"> Islamic Sciences College</option>
+									<option value="Address"> Princess Rahma Social Work College</option>
+									<option value="Address"> Queen Noor College</option>
+									<option value="Address"> Aqaba College</option>
+									<option value="Address">AlQadisia College</option>
+									<option value="Address"> Khawarizmi College</option>
+									<option value="Address">Amman Community College</option>
+									<option value="Address"> Arab College</option>
+									<option value="Address">Queen Alia College</option>
+									<option value="Address"> Al Quds College</option>
+									<option value="Address">AlAndalus College</option>
+									<option value="Address">Intermediate University College</option>
+									<option value="Address"> Hiteen College</option>
+									<option value="Address"> Princess Tharwat College</option>
+									<option value="Address"> Islamic Community College</option>
+									<option value="Address"> Qurtoba College</option>
+									<option value="Address">Zarqa Private College</option>
+									<option value="Address"> Granada College</option>
+									<option value="Address">Alrazi College</option>
+									<option value="Address"> Ibn Khaldun College</option>
+									<option value="Address">Mafraq Private College</option>
+									<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
+									<option value="Address">Banking Studies College</option>
+									<option value="Address">Jordanian College for Science and Technology</option>
+									<option value="Address"> Jordanian Canadian College</option>
+									<option value="Address"> Complimentary Medical Professions College</option>
+									<option value="Address"> Rufaida Alaslamiya College</option>
+									<option value="Address">Nusaiba Almaznia College</option>
+									<option value="Address"> Medical Services College</option>
+									<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
+									<option value="Address"> Prince Hasan Islamic Sciences College </option>
+									<option value="Address"> Prince Hussein Bin Abdallah College</option>
+									<option value="Address">Prince Faisal College</option>
+									<option value="Address"> Wadi Alseer College</option>
+									<option value="Address">Amman Training College</option>			
 								</select>
-								<br><br>
-								<input type="submit">
+
 							</div>
-							<br>
-							<div>
-								<label>Major</label> <br>
-								<input type="text" name="firstname">
-								<br>
+							
+							<div class="form-group">
+								<label>Major</label>
+								<input type="text" name="firstname"  class="form-control">
+								
 							</div>
-							<br>
-							<div>
-								<label>Major Type</label><br>
-								<select name="Major Type">
-								<option value="Address"> Engineering</option>
-								<option value="Address"> Finance</option>
-								<option value="Address"> Business & Management</option>
-								<option value="Address">Educational Sciences </option>
-								<option value="Address">  Media, Literature & Language</option>
-								<option value="Address">Medicine, Dentistry, Pharmacy & Nursing</option>
-								<option value="Address">  IT</option>
-								<option value="Address"> Sciences</option>
-								<option value="Address"> Other</option>
+							
+							<div class="form-group">
+								<label>Major Type</label>
+								<select class="form-control">
+									<option value="Address"> Engineering</option>
+									<option value="Address"> Finance</option>
+									<option value="Address"> Business & Management</option>
+									<option value="Address">Educational Sciences </option>
+									<option value="Address">  Media, Literature & Language</option>
+									<option value="Address">Medicine, Dentistry, Pharmacy & Nursing</option>
+									<option value="Address">  IT</option>
+									<option value="Address"> Sciences</option>
+									<option value="Address"> Other</option>
 								</select>
-								<br><br>
-								<input type="submit">
 							</div>
-							<br>
-							<div>
+							
+							<div class="form-group">
 								<label>GPA</label><br>							
-								<input type="number">
+								<input type="number"  class="form-control">
 							</div>
-							<br>
-							<div>
-								<label>Starting Semester</label><br>	
-								<select name="Starting Semester">
-								<option value="Address">First Semester </option>
-								<option value="Address"> Second Semester</option>				
+							
+							<div class="form-group">
+								<label>Starting Semester</label>	
+								<select class="form-control">
+									<option value="Address">First Semester </option>
+									<option value="Address"> Second Semester</option>
+									<option value="Nationality">Summer Semester</option>
 								</select>
-								<br><br>
-								<input type="submit">
 							</div>
-							<br>
-							<div>
-								<label>Starting Year</label> <br>
-								<input type="dateyear" name="year"  min = "2000">
+							
+							<div class="form-group">
+								<label>Starting Year</label>
+								<input type="dateyear" name="year"  min = "2000"  class="form-control">
 							</div>
-							<br>
-							<div>
-								<label>Graduation Semester</label> <br>
-								<select name="Graduation Semester">
-								<option value="Address">First Semester </option>
-								<option value="Address"> Second Semester</option>				
+							
+							<div class="form-group">
+								<label>Graduation Semester</label>
+								<select class="form-control">
+									<option value="Address">First Semester </option>
+									<option value="Address"> Second Semester</option>
+									<option value="Nationality">Summer Semester</option>									
 								</select>
-								<br><br>
-								<input type="submit">
+							
 							</div>
-							<br>
-							<div>
-								<label>Graduation Year</label>  <br>
-								<input type="dateyear" name="year" >
+							
+							<div class="form-group">
+								<label>Graduation Year</label>
+								<input type="dateyear" name="year"  class="form-control" >
 							</div>
-							<br>
+							
 								
 						</form>											
                     </div>
@@ -560,13 +721,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-   <!-- /.col-lg-12 -->
-</div>
- <!-- /.row -->
-
- <div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                Currently Studying
@@ -576,161 +730,149 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-                            	<label>Currently Studying</label>  <br>
-                            	<label>University  / Bachelor's</label><br> 
-								<select name="College Name">
-								<option value="Address">Tafila Technical University</option>
-								<option value="Address">Mutah University</option>
-								<option value="Address">Ajloun National University</option>
-								<option value="Address">Al al-Bayt University</option>
-								<option value="Address"> Al-Ahliyya Amman University</option>
-								<option value="Address">Al-Balqa' Applied University</option>
-								<option value="Address"> Al-Hussein Bin Talal University</option>
-								<option value="Address">Al-Zaytoonah University</option>
-								<option value="Address"> American University of Madaba</option>
-								<option value="Address">Amman Arab University </option>
-								<option value="Address">Applied Science Private University </option>
-								<option value="Address">Arab Academy for Banking and Financial Sciences</option>
-								<option value="Address"> Arab Open University </option>
-								<option value="Address"> German Jordanian University </option>
-								<option value="Address"> Irbid National University </option>
-								<option value="Address"> Israa' University</option>
-								<option value="Address">Jadara University</option>
-								<option value="Address">Jerash Private University</option>
-								<option value="Address">Jordan Academy of Music</option>
-								<option value="Address">Jordan Applied University</option>
-								<option value="Address">College of Hospitality and Toursim Education</option>
-								<option value="Address">Jordan University of Science and Technology</option>
-								<option value="Address"> Middle East University</option>
-								<option value="Address">Philadelphia University</option>
-								<option value="Address"> Princess Sumaya University for Technology</option>
-								<option value="Address"> Red Sea Institute of Cinematic Arts</option>
-								<option value="Address">The Hashemite University</option>
-								<option value="Address">The World Islamic Sciences and Education University</option>
-								<option value="Address">University of Jordan</option>
-								<option value="Address"> University of Petra</option>
-								<option value="Address">Yarmouk University</option>
-								<option value="Address"> Zarqa University</option>
-								<option value="Address"> Faculty of Educational Sciences and Arts</option>
-											
+                            	<label>Currently Studying</label>
+                            	<label>University  / Bachelor's</label>
+								<select class="form-control">
+									<option value="Address">Tafila Technical University</option>
+									<option value="Address">Mutah University</option>
+									<option value="Address">Ajloun National University</option>
+									<option value="Address">Al al-Bayt University</option>
+									<option value="Address"> Al-Ahliyya Amman University</option>
+									<option value="Address">Al-Balqa' Applied University</option>
+									<option value="Address"> Al-Hussein Bin Talal University</option>
+									<option value="Address">Al-Zaytoonah University</option>
+									<option value="Address"> American University of Madaba</option>
+									<option value="Address">Amman Arab University </option>
+									<option value="Address">Applied Science Private University </option>
+									<option value="Address">Arab Academy for Banking and Financial Sciences</option>
+									<option value="Address"> Arab Open University </option>
+									<option value="Address"> German Jordanian University </option>
+									<option value="Address"> Irbid National University </option>
+									<option value="Address"> Israa' University</option>
+									<option value="Address">Jadara University</option>
+									<option value="Address">Jerash Private University</option>
+									<option value="Address">Jordan Academy of Music</option>
+									<option value="Address">Jordan Applied University</option>
+									<option value="Address">College of Hospitality and Toursim Education</option>
+									<option value="Address">Jordan University of Science and Technology</option>
+									<option value="Address"> Middle East University</option>
+									<option value="Address">Philadelphia University</option>
+									<option value="Address"> Princess Sumaya University for Technology</option>
+									<option value="Address"> Red Sea Institute of Cinematic Arts</option>
+									<option value="Address">The Hashemite University</option>
+									<option value="Address">The World Islamic Sciences and Education University</option>
+									<option value="Address">University of Jordan</option>
+									<option value="Address"> University of Petra</option>
+									<option value="Address">Yarmouk University</option>
+									<option value="Address"> Zarqa University</option>
+									<option value="Address"> Faculty of Educational Sciences and Arts</option>
 								</select>
-								<br><br>
-								<input type="submit">
-								<br>
-
-
-								<label>College Name</label><br> 
-								<select name="College Name">
-								<option value="Address">Amman College</option>
-								<option value="Address">Amman Engineering Technology College</option>
-								<option value="Address">Princess Alia College </option>
-								<option value="Address"> Salt College</option>
-								<option value="Address"> Zarqa Public College</option>
-								<option value="Address"> Irbid  College</option>
-								<option value="Address"> Al Husun College</option>
-								<option value="Address"> Al Karak College</option>
-								<option value="Address"> Ajloun College</option>
-								<option value="Address">Tafila College </option>
-								<option value="Address"> Ma’an College</option>
-								<option value="Address"> Shobak College</option>
-								<option value="Address"> Dawa and Religion Fundamentals College</option>
-								<option value="Address"> Royal Jordanian Geographic Center College</option>
-								<option value="Address"> Islamic Sciences College</option>
-								<option value="Address"> Princess Rahma Social Work College</option>
-								<option value="Address"> Queen Noor College</option>
-								<option value="Address"> Aqaba College</option>
-								<option value="Address">AlQadisia College</option>
-								<option value="Address"> Khawarizmi College</option>
-								<option value="Address">Amman Community College</option>
-								<option value="Address"> Arab College</option>
-								<option value="Address">Queen Alia College</option>
-								<option value="Address"> Al Quds College</option>
-								<option value="Address">AlAndalus College</option>
-								<option value="Address">Intermediate University College</option>
-								<option value="Address"> Hiteen College</option>
-								<option value="Address"> Princess Tharwat College</option>
-								<option value="Address"> Islamic Community College</option>
-								<option value="Address"> Qurtoba College</option>
-								<option value="Address">Zarqa Private College</option>
-								<option value="Address"> Granada College</option>
-								<option value="Address">Alrazi College</option>
-								<option value="Address"> Ibn Khaldun College</option>
-								<option value="Address">Mafraq Private College</option>
-								<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
-								<option value="Address">Banking Studies College</option>
-								<option value="Address">Jordanian College for Science and Technology</option>
-								<option value="Address"> Jordanian Canadian College</option>
-								<option value="Address"> Complimentary Medical Professions College</option>
-								<option value="Address"> Rufaida Alaslamiya College</option>
-								<option value="Address">Nusaiba Almaznia College</option>
-								<option value="Address"> Medical Services College</option>
-								<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
-								<option value="Address"> Prince Hasan Islamic Sciences College </option>
-								<option value="Address"> Prince Hussein Bin Abdallah College</option>
-								<option value="Address">Prince Faisal College</option>
-								<option value="Address"> Wadi Alseer College</option>
-								<option value="Address">Amman Training College</option>			
-								</select>
-								<br><br>
-								<input type="submit">
 							</div>
-							<div>
-								<label>University / College Type</label><br>
-								<select name="Nationality">
+							<div class="form-group">
+								<label>College Name</label> 
+								<select class="form-control">
+									<option value="Address">Amman College</option>
+									<option value="Address">Amman Engineering Technology College</option>
+									<option value="Address">Princess Alia College </option>
+									<option value="Address"> Salt College</option>
+									<option value="Address"> Zarqa Public College</option>
+									<option value="Address"> Irbid  College</option>
+									<option value="Address"> Al Husun College</option>
+									<option value="Address"> Al Karak College</option>
+									<option value="Address"> Ajloun College</option>
+									<option value="Address">Tafila College </option>
+									<option value="Address"> Ma’an College</option>
+									<option value="Address"> Shobak College</option>
+									<option value="Address"> Dawa and Religion Fundamentals College</option>
+									<option value="Address"> Royal Jordanian Geographic Center College</option>
+									<option value="Address"> Islamic Sciences College</option>
+									<option value="Address"> Princess Rahma Social Work College</option>
+									<option value="Address"> Queen Noor College</option>
+									<option value="Address"> Aqaba College</option>
+									<option value="Address">AlQadisia College</option>
+									<option value="Address"> Khawarizmi College</option>
+									<option value="Address">Amman Community College</option>
+									<option value="Address"> Arab College</option>
+									<option value="Address">Queen Alia College</option>
+									<option value="Address"> Al Quds College</option>
+									<option value="Address">AlAndalus College</option>
+									<option value="Address">Intermediate University College</option>
+									<option value="Address"> Hiteen College</option>
+									<option value="Address"> Princess Tharwat College</option>
+									<option value="Address"> Islamic Community College</option>
+									<option value="Address"> Qurtoba College</option>
+									<option value="Address">Zarqa Private College</option>
+									<option value="Address"> Granada College</option>
+									<option value="Address">Alrazi College</option>
+									<option value="Address"> Ibn Khaldun College</option>
+									<option value="Address">Mafraq Private College</option>
+									<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
+									<option value="Address">Banking Studies College</option>
+									<option value="Address">Jordanian College for Science and Technology</option>
+									<option value="Address"> Jordanian Canadian College</option>
+									<option value="Address"> Complimentary Medical Professions College</option>
+									<option value="Address"> Rufaida Alaslamiya College</option>
+									<option value="Address">Nusaiba Almaznia College</option>
+									<option value="Address"> Medical Services College</option>
+									<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
+									<option value="Address"> Prince Hasan Islamic Sciences College </option>
+									<option value="Address"> Prince Hussein Bin Abdallah College</option>
+									<option value="Address">Prince Faisal College</option>
+									<option value="Address"> Wadi Alseer College</option>
+									<option value="Address">Amman Training College</option>			
+								</select>
+							</div>
+							<div class="form-group">
+								<label>University / College Type</label>
+								<select class="form-control">
 									<option value="Nationality">Public</option>
 									<option value="Nationality">Private</option>
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-							<div>
-								<label>Type of Study</label><br>
-								<select name="Nationality">
+
+							</div>
+							<div class="form-group">
+								<label>Type of Study</label>
+								<select class="form-control">
 									<option value="Nationality">Competitive Stream</option>
 									<option value="Nationality">Parallel Stream</option>
 									<option value="Nationality">International Stream</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
+							</div>
 							<!-- Major Auto Complete (we need to have the option of adding majors) -->
-							<div>
-								<label>Univrsity / College ID</label><br>						
-								<input type="number">
+							<div class="form-group">
+								<label>Univrsity / College ID</label>						
+								<input type="number"  class="form-control">
 							</div>
 							<div class="form-group">
-								<label>System Password </label><br>
-								<input type="text" name="firstname">
-								<br>
+								<label>System Password </label>
+								<input type="text" name="firstname"  class="form-control">
+								
 							</div>
-							<div>
-								<label>Starting Semester</label><br>
-								<select name="Nationality">
+							<div class="form-group">
+								<label>Starting Semester</label>
+								<select class="form-control">
 									<option value="Nationality">First Semester</option>
 									<option value="Nationality">Second Semester</option>
 									<option value="Nationality">Summer Semester</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-							<div>
-								<label>Starting Year starting 2005/2006 ---- 2011/2012</label>  <br>
-								<input type="dateyear" name="year" >
 							</div>
-							<div>
-								<label>Expected Graduation Semester</label><br>
-								<select name="Nationality">
+							<div class="form-group">
+								<label>Starting Year starting 2005/2006 ---- 2011/2012</label>
+								<input type="dateyear" name="year"  class="form-control" >
+							</div>
+							<div class="form-group">
+								<label>Expected Graduation Semester</label>
+								<select class="form-control">
 									<option value="Nationality">First Semester</option>
 									<option value="Nationality">Second Semester</option>
 									<option value="Nationality">Summer Semester</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-							<div>
-								<label>Expected Graduation Year</label>  <br>
-								<input type="dateyear" name="year" >
-							</div><br>
+								
+							</div>
+							<div class="form-group">
+								<label>Expected Graduation Year</label>
+								<input type="dateyear" name="year"   class="form-control">
+							</div>
 
 								
 						</form>											
@@ -742,14 +884,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-   <!-- /.col-lg-12 -->
-</div>
- <!-- /.row -->
-
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                Currently Studying
@@ -759,81 +893,79 @@
                     <div class="col-lg-6">
                         <form role="form">
                             <div class="form-group">
-								<label>Major Hours</label><br>										 
-								<input type="number">
-							</div><br>
-							<div>
-								<label>Scholarship Starting Semester</label><br>
-								<select name="Nationality">
+								<label>Major Hours</label>										 
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Scholarship Starting Semester</label>
+								<select class="form-control">
 									<option value="Nationality">First Semester</option>
 									<option value="Nationality">Second Semester</option>
 									<option value="Nationality">Summer Semester</option>	
 								</select>
-								<br><br>
-								<input type="submit">
-							</div><br>
-							<div>
-								<label>Scholarship Starting Year</label>  <br>
-								<input type="dateyear" name="year" >
-							</div><br>
-							<div class="form-group">
-								<label>Unaccounted Hours Passed Before Scholarship</label><br>										 
-								<input type="number">
-							</div><br>
-							<div class="form-group">
-								<label>Unnaccounted Hours Passed Before Scholarship </label><br>
-								<input type="text" name="firstname">
-								<br>
 							</div>
 							<div class="form-group">
-								<label>Unnaccounted Hours Remaining</label><br>										 
-								<input type="number">
-							</div><br>
-							<div class="form-group">
-								<label>Unnaccounted Hours Remaining </label><br>
-								<input type="text" name="firstname">
-								<br>
+								<label>Scholarship Starting Year</label>
+								<input type="dateyear" name="year"  class="form-control" >
 							</div>
 							<div class="form-group">
-								<label>Accounted Hours Passed Before Scholarship</label><br>										 
-								<input type="number">
-							</div><br>
+								<label>Unaccounted Hours Passed Before Scholarship</label>										 
+								<input type="number"  class="form-control">
+							</div>
 							<div class="form-group">
-								<label>Hours Failed/Dropped Before Scholarship</label><br>										 
-								<input type="number">
-							</div><br>
+								<label>Unnaccounted Hours Passed Before Scholarship </label>
+								<input type="text" name="firstname"  class="form-control">
+							
+							</div>
+							<div class="form-group">
+								<label>Unnaccounted Hours Remaining</label>									 
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Unnaccounted Hours Remaining </label>
+								<input type="text" name="firstname"  class="form-control">
+							
+							</div>
+							<div class="form-group">
+								<label>Accounted Hours Passed Before Scholarship</label>										 
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Hours Failed/Dropped Before Scholarship</label>									 
+								<input type="number"  class="form-control">
+							</div>
 							<div class="form-group"><!--Number ?? Out of ?? Out of a 100%-->
-								<label>GPA at Start of Scholarship</label><br>										 
-								<input type="number">
-							</div><br>
-							<div>
-								<label>First Semester Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Original Hour Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Paid Hour Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Normal Semester Original Registration Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Normal Semester Paid Registration Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Summer Semester Original Registration Fees</label><br>						
-								<input type="number">
-							</div><br>
-														<div>
-								<label>Summer Semester Paid Registration Fees</label><br>						
-								<input type="number">
-							</div><br>
+								<label>GPA at Start of Scholarship</label>										 
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>First Semester Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Original Hour Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Paid Hour Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Normal Semester Original Registration Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Normal Semester Paid Registration Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Summer Semester Original Registration Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
+							<div class="form-group">
+								<label>Summer Semester Paid Registration Fees</label>						
+								<input type="number"  class="form-control">
+							</div>
 							
 						</form>											
                     </div>
@@ -844,13 +976,6 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-    </div>
-   <!-- /.col-lg-12 -->
-</div>
- <!-- /.row -->
-
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                Currently Studying
@@ -861,45 +986,8 @@
                         <form role="form">
                             <div class="form-group">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-								
-
-
-
-
-
-
-
-
-
-
-
-
-								
-
-
-
-
-
-
 									
-								<br><br><br><br><br><br>
+								
 						</form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
@@ -913,4 +1001,4 @@
    <!-- /.col-lg-12 -->
 </div>
  <!-- /.row -->
-  <footer id="footer"> &copy; 2015 Rowwad. All rights reserved .</footer>
+<footer id="footer"> &copy; 2015 Rowwad. All rights reserved .</footer>

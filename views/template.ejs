@@ -18,6 +18,8 @@
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
+    <link href="/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+
     <%for (var i = 0;i<cssList.length;i++){%>
     	<% if(cssList[i]==="timeline") {%>
 			<link href="../dist/css/timeline.css" rel="stylesheet">
@@ -41,6 +43,16 @@
 
     <!-- DataTables CSS -->
 
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <script type="text/javascript" src="/js/bootstrap-datepicker.min.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -130,23 +142,49 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Scholar<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                        <li>
-                            <a href="/scholar/"></i> Scholar
-                            </a>
+                         	<a href="#">Scholars<span class="fa arrow"></span></a>
+                         	<ul class="nav nav-second-level">
+                        		<li>
+                            		<a href="/scholar/">Scholar</a>
+                        		</li>
+                        		<li>
+                            		<a href="/add-scholar/">Add Scholar</a>
+                            	</li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="/add-scholar/"></i>Add Scholar
-                            </a>
-                            <a href="/semester-data/"></i>Semester Data
-                            </a>
-                            <a href="/dardashat/"></i>Dardashat
-                            </a>
-                             <a href="/enrichment/"></i>Enrichment
-                            </a>
-                         </li>
-                        </ul>
+                        	<a href="/semester-data/">Semester Data</a>
+                        </li>
+                        <li>
+                            <a href="/dardashat/">Dardashat</a>
+                        </li>
+                        <li>
+                            <a href="/enrichment/">Enrichment</a>
+                        </li>
+                        <li>
+                            <a href="/service-schedule/">Service Schedule</a>
+                        </li>
+						<li>
+                            <a href="/evaluation/">Evaluation</a>
+						</li>
+						<li>
+                            <a href="/notes/">Notes Contacts</a>
+						</li>
+						<li>
+                            <a href="/official-letters/">Official Letters</a>
+						</li>
+						<li>
+                            <a href="/contacts/">Contacts</a>
+						</li>
+						<li>
+                            <a href="/highlights/">Highlights</a>
+						</li>
+						<li>
+                            <a href="/view-scholars/">View Scholars</a>
+						</li>
+						<li>
+                            <a href="/notify-me-when/">Notify me when</a>
+
                         </li>
                         <li>
                             <a href="/dashboard/">
@@ -263,17 +301,6 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-
-
 
     <%for (var i = 0;i<scriptsList.length;i++){%>
     	<% if(scriptsList[i]==="raphael") {%>
@@ -323,6 +350,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+	<script type="text/javascript">
+		$('.input-group.date').datepicker({
+	    	format: "yyyy-mm-dd",
+	    	startDate: "1980-01-01",
+	    	todayHighlight: true
+		});
+	</script>
 
 </body>
 
