@@ -27,19 +27,19 @@ router.get('/add-scholar/', function(req, res, next) {
 	});
 });
 
-router.get('/semester-data/', function(req, res, next) {
+router.get('/add-semester/', function(req, res, next) {
 	res.render('template', {
-		title: 'Semester Data',
-		viewFile: 'pages/semester-data',
+		title: 'Add Semester Data',
+		viewFile: 'pages/add-semester',
 		scriptsList:[],
 		cssList:[]
 	});
 });
 
-router.get('/dardashat/', function(req, res, next) {
+router.get('/add-dardashat/', function(req, res, next) {
 	res.render('template', {
 		title: 'Dardashat',
-		viewFile: 'pages/dardashat',
+		viewFile: 'pages/add_dardashat',
 		scriptsList:[],
 		cssList:[]
 	});
@@ -135,10 +135,18 @@ router.get('/notify-me-when/', function(req, res, next) {
 	});
 });
 
-router.get('/add-semester/', function(req, res, next) {
+router.get('/view-semester/', function(req, res, next) {
 	res.render('template', {
-		title: 'Add Semester',
-		viewFile: 'pages/add-semester',
+		title: 'View Semester',
+		viewFile: 'pages/view-semester',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+router.get('/view-dardashat/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Dardashat',
+		viewFile: 'pages/view-dardashat',
 		scriptsList:[],
 		cssList:[]
 	});
