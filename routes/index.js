@@ -135,6 +135,15 @@ router.get('/notify-me-when/', function(req, res, next) {
 	});
 });
 
+router.get('/add-semester/', function(req, res, next) {
+	res.render('template', {
+		title: 'Add Semester',
+		viewFile: 'pages/add-semester',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
 router.get('/dashboard/', function(req, res, next) {
 	res.render('template', {
 		title:"Dashboard",
