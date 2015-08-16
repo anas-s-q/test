@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <div class="row">
     <div class="col-lg-12">
-        <form role="form">
+        <form role="form"  type="get" action="/dardashat-attendance/">
             <!-- name = "firstname" name = "lastname"-->
             <div class="panel panel-default">
 				<div class="panel-heading">
@@ -315,6 +315,20 @@
 					<option value="XX">Other</option>
 				</select>
 			</div>
+			<div class="form-group">
+				<label>ID # </label>
+				  <input type="number" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Date of Birth</label>
+			</div>
+			<div class="input-group date">
+				<input type="text" class="form-control">
+				<span class="input-group-addon">
+					<i class="glyphicon glyphicon-th"></i>
+				</span>
+			</div><br>
+			<button class="btn btn-primary">Add</button>
 		</form>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -323,20 +337,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
-                            <div class="form-group">
-								<label>ID # </label>
-								  <input type="number" class="form-control">
-							</div>
-							<div class="form-group">
-								<label>Date of Birth</label>
-							</div>
-							<div class="input-group date">
-								<input type="text" class="form-control">
-								<span class="input-group-addon">
-									<i class="glyphicon glyphicon-th"></i>
-								</span>
-							</div>
+                        <form role="form" type="get" action="/dardashat-attendance/">  
 							<div class="form-group">
 								<label>Mobile # 1</label>
 								<input type="tel" name="usrtel" class="form-control">
@@ -353,6 +354,7 @@
 								<input type="email" name="email" class="form-control">
 								
 							</div>
+							<button class="btn btn-primary">Add</button>
 							
 
 						</form>											
@@ -371,7 +373,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
 							<div class="form-group">
 							<!--(If Yes: Auto Complete menu ALL Scholars)-->
                                 <label>Relatives within the scholarship</label>
@@ -458,6 +460,7 @@
                                     </label>
                                 </div>
 							</div>
+							<button class="btn btn-primary">Add</button>
 						</form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
@@ -474,7 +477,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
                             <div class="form-group">
                             	<label>Governorate</label>
 								<select class="form-control">
@@ -501,6 +504,7 @@
                                 <label>Street & Location</label>
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
+                            <button class="btn btn-primary">Add</button>
  						</form>											
                     </div>
                     <!-- /.col-lg-6 (nested) -->
@@ -517,7 +521,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
                             <div class="form-group">
 								<label>School </label>
 								<input type="text" name="firstname"  class="form-control">
@@ -557,6 +561,7 @@
 								<label>GPA</label>						
 								<input type="number"  class="form-control">
 							</div>
+							<button class="btn btn-primary">Add</button>
 						
 						</form>											
                     </div>
@@ -574,7 +579,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
                             <div class="form-group">
 								<label>Finished Diplome Earlier</label>
 								<div class="radio">
@@ -656,14 +661,7 @@
 									<option value="Address">Amman Training College</option>			
 								</select>
 
-							</div>
-							
-							<div class="form-group">
-								<label>Major</label>
-								<input type="text" name="firstname"  class="form-control">
-								
-							</div>
-							
+							</div>							
 							<div class="form-group">
 								<label>Major Type</label>
 								<select class="form-control">
@@ -712,6 +710,7 @@
 								<label>Graduation Year</label>
 								<input type="dateyear" name="year"  class="form-control" >
 							</div>
+							<button class="btn btn-primary">Add</button>
 							
 								
 						</form>											
@@ -730,7 +729,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
                             <div class="form-group">
                             <!--(If University get Drop Down of university list from below, If College get drop down of colleges from below) -->
                             	<label>Currently Studying</label>
@@ -769,60 +768,6 @@
 									<option value="Address">Yarmouk University</option>
 									<option value="Address"> Zarqa University</option>
 									<option value="Address"> Faculty of Educational Sciences and Arts</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label>College Name</label> 
-								<select class="form-control">
-									<option value="Address">Amman College</option>
-									<option value="Address">Amman Engineering Technology College</option>
-									<option value="Address">Princess Alia College </option>
-									<option value="Address"> Salt College</option>
-									<option value="Address"> Zarqa Public College</option>
-									<option value="Address"> Irbid  College</option>
-									<option value="Address"> Al Husun College</option>
-									<option value="Address"> Al Karak College</option>
-									<option value="Address"> Ajloun College</option>
-									<option value="Address">Tafila College </option>
-									<option value="Address"> Ma’an College</option>
-									<option value="Address"> Shobak College</option>
-									<option value="Address"> Dawa and Religion Fundamentals College</option>
-									<option value="Address"> Royal Jordanian Geographic Center College</option>
-									<option value="Address"> Islamic Sciences College</option>
-									<option value="Address"> Princess Rahma Social Work College</option>
-									<option value="Address"> Queen Noor College</option>
-									<option value="Address"> Aqaba College</option>
-									<option value="Address">AlQadisia College</option>
-									<option value="Address"> Khawarizmi College</option>
-									<option value="Address">Amman Community College</option>
-									<option value="Address"> Arab College</option>
-									<option value="Address">Queen Alia College</option>
-									<option value="Address"> Al Quds College</option>
-									<option value="Address">AlAndalus College</option>
-									<option value="Address">Intermediate University College</option>
-									<option value="Address"> Hiteen College</option>
-									<option value="Address"> Princess Tharwat College</option>
-									<option value="Address"> Islamic Community College</option>
-									<option value="Address"> Qurtoba College</option>
-									<option value="Address">Zarqa Private College</option>
-									<option value="Address"> Granada College</option>
-									<option value="Address">Alrazi College</option>
-									<option value="Address"> Ibn Khaldun College</option>
-									<option value="Address">Mafraq Private College</option>
-									<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
-									<option value="Address">Banking Studies College</option>
-									<option value="Address">Jordanian College for Science and Technology</option>
-									<option value="Address"> Jordanian Canadian College</option>
-									<option value="Address"> Complimentary Medical Professions College</option>
-									<option value="Address"> Rufaida Alaslamiya College</option>
-									<option value="Address">Nusaiba Almaznia College</option>
-									<option value="Address"> Medical Services College</option>
-									<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
-									<option value="Address"> Prince Hasan Islamic Sciences College </option>
-									<option value="Address"> Prince Hussein Bin Abdallah College</option>
-									<option value="Address">Prince Faisal College</option>
-									<option value="Address"> Wadi Alseer College</option>
-									<option value="Address">Amman Training College</option>			
 								</select>
 							</div>
 							<div class="form-group">
@@ -876,6 +821,7 @@
 								<label>Expected Graduation Year</label>
 								<input type="dateyear" name="year"   class="form-control">
 							</div>
+							<button class="btn btn-primary">Add</button>
 
 								
 						</form>											
@@ -889,12 +835,12 @@
         <!-- /.panel -->
         <div class="panel panel-default">
             <div class="panel-heading">
-               Currently Studying
+               Scholarship Related
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                        <form role="form" type="get" action="/dardashat-attendance/">
                             <div class="form-group">
 								<label>Major Hours</label>										 
 								<input type="number"  class="form-control">
@@ -969,6 +915,7 @@
 								<label>Summer Semester Paid Registration Fees</label>						
 								<input type="number"  class="form-control">
 							</div>
+							<button class="btn btn-primary">Add</button>
 							
 						</form>											
                     </div>
@@ -986,8 +933,8 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
-                            <div class="form-group">
+                        <form role="form" type="get" action="/dardashat-attendance/">
+                            
 
 									
 								

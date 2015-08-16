@@ -152,6 +152,78 @@ router.get('/view-dardashat/', function(req, res, next) {
 	});
 });
 
+router.get('/view-scholar/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Scholar',
+		viewFile: 'pages/view-scholar',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-enrichment/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Enrichment',
+		viewFile: 'pages/view-enrichment',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-schedule/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Schedule',
+		viewFile: 'pages/view-schedule',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-attendance/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Attendance',
+		viewFile: 'pages/view-attendance',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-evaluation/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Evaluation',
+		viewFile: 'pages/view-evaluation',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-notes/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Notes',
+		viewFile: 'pages/view-notes',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-official/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Official Letters',
+		viewFile: 'pages/view-official',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
+router.get('/view-contacts/', function(req, res, next) {
+	res.render('template', {
+		title: 'View Contacts',
+		viewFile: 'pages/view-contacts',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
 router.get('/dashboard/', function(req, res, next) {
 	res.render('template', {
 		title:"Dashboard",
