@@ -2,11 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-	res.render('template', {
-		title: 'Blank',
-		scriptsList:[],
-		cssList:[]
-	});
+	res.render('login', { title: 'Express' });
 });
 
 router.get('/scholar/', function(req, res, next) {
