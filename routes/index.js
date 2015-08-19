@@ -45,6 +45,15 @@ router.get('/add-dardashat/', function(req, res, next) {
 	});
 });
 
+router.get('/add-dardashat-attendance/', function(req, res, next) {
+	res.render('template', {
+		title: 'Dardashat Attendance',
+		viewFile: 'pages/add_dardashat_attendance',
+		scriptsList:[],
+		cssList:[]
+	});
+});
+
 router.get('/enrichment/', function(req, res, next) {
 	res.render('template', {
 		title: 'Enrichment',
