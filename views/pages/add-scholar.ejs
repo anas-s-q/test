@@ -369,29 +369,72 @@
                                 <label>Relatives within the scholarship</label>
                                 <div class="radio">
 	                                <label>
-	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                	<input type="radio" name="relative_within_sc" value="1">Yes
 	                                </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    	<input type="radio" name="relative_within_sc" value="0" checked>No
                                     </label>
                                 </div>
+							</div>
+							<script type="text/javascript">
+								function preparerelativeSc(){
+									var radioObj=$('input[type=radio][name=relative_within_sc]:checked')
+							        if (radioObj.val() == '1') {
+							            $(".js_relative_within_sc").show();
+							        }else{
+							            $(".js_relative_within_sc").hide();
+							        }
+								}
+							    $(function(){
+							    	$('input[type=radio][name=relative_within_sc]').change(preparerelativeSc);
+							    	preparerelativeSc();
+							    });
+							</script>
+							<div class="form-group js_relative_within_sc">
+								<label>Relative Scholar Name</label>
+								<select class="form-control">
+									<option value="Nationality">أحمد جمال</option>
+									<option value="Nationality">عمر خالد</option>
+								</select>
 							</div>
 							<div class="form-group">
 							<!--(If Yes: Name / Text + Details / Long Text)-->
                                 <label>Other Available Scholarship Support</label>
                                 <div class="radio">
 	                                <label>
-	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                	<input type="radio" name="other_av_sc_support" value="1">Yes
 	                                </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    	<input type="radio" name="other_av_sc_support" value="0" checked>No
                                     </label>
                                 </div>
 							</div>
+							<script type="text/javascript">
+								function prepareOtherScSupport(){
+									var radioObj=$('input[type=radio][name=other_av_sc_support]:checked')
+							        if (radioObj.val() == '1') {
+							            $(".js_other_av_sc_support").show();
+							        }else{
+							            $(".js_other_av_sc_support").hide();
+							        }
+								}
+							    $(function(){
+							    	$('input[type=radio][name=other_av_sc_support]').change(prepareOtherScSupport);
+							    	prepareOtherScSupport();
+							    });
+							</script>
+							<div class="form-group js_other_av_sc_support">
+								<label>Name</label>					
+								<input type="text" class="form-control">
+							</div>
+							<div class="form-group js_other_av_sc_support">
+                                <label>Details</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
 							<div class="form-group">
 								<label>Father Full Name </label>
 								
@@ -441,14 +484,32 @@
                                 <label>National Aid</label>
                                 <div class="radio">
 	                                <label>
-	                                	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+	                                	<input type="radio" name="national_aid" value="1">Yes
 	                                </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+                                    	<input type="radio" name="national_aid" value="0">No
                                     </label>
                                 </div>
+							</div>
+							<script type="text/javascript">
+								function prepareNationalAid(){
+									var radioObj=$('input[type=radio][name=national_aid]:checked')
+							        if (radioObj.val() == '1') {
+							            $(".js_national_aid").show();
+							        }else{
+							            $(".js_national_aid").hide();
+							        }
+								}
+							    $(function(){
+							    	$('input[type=radio][name=national_aid]').change(prepareNationalAid);
+							    	prepareNationalAid();
+							    });
+							</script>
+							<div class="form-group js_national_aid">
+								<label>Amount</label>					
+								<input type="number" class="form-control">
 							</div>
 						</div>
 					</div>
@@ -774,97 +835,202 @@
 		               Currently Studying
 		            </div>
 		            <div class="panel-body">
-                            <div class="form-group">
-                            <!--(If University get Drop Down of university list from below, If College get drop down of colleges from below) -->
-                            	<label>Currently Studying</label>
-                            	<label>University  / Bachelor's</label>
-								<select class="form-control">
-									<option value="Address">Tafila Technical University</option>
-									<option value="Address">Mutah University</option>
-									<option value="Address">Ajloun National University</option>
-									<option value="Address">Al al-Bayt University</option>
-									<option value="Address"> Al-Ahliyya Amman University</option>
-									<option value="Address">Al-Balqa' Applied University</option>
-									<option value="Address"> Al-Hussein Bin Talal University</option>
-									<option value="Address">Al-Zaytoonah University</option>
-									<option value="Address"> American University of Madaba</option>
-									<option value="Address">Amman Arab University </option>
-									<option value="Address">Applied Science Private University </option>
-									<option value="Address">Arab Academy for Banking and Financial Sciences</option>
-									<option value="Address"> Arab Open University </option>
-									<option value="Address"> German Jordanian University </option>
-									<option value="Address"> Irbid National University </option>
-									<option value="Address"> Israa' University</option>
-									<option value="Address">Jadara University</option>
-									<option value="Address">Jerash Private University</option>
-									<option value="Address">Jordan Academy of Music</option>
-									<option value="Address">Jordan Applied University</option>
-									<option value="Address">College of Hospitality and Toursim Education</option>
-									<option value="Address">Jordan University of Science and Technology</option>
-									<option value="Address"> Middle East University</option>
-									<option value="Address">Philadelphia University</option>
-									<option value="Address"> Princess Sumaya University for Technology</option>
-									<option value="Address"> Red Sea Institute of Cinematic Arts</option>
-									<option value="Address">The Hashemite University</option>
-									<option value="Address">The World Islamic Sciences and Education University</option>
-									<option value="Address">University of Jordan</option>
-									<option value="Address"> University of Petra</option>
-									<option value="Address">Yarmouk University</option>
-									<option value="Address"> Zarqa University</option>
-									<option value="Address"> Faculty of Educational Sciences and Arts</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label>University / College Type</label>
-								<select class="form-control">
-									<option value="Nationality">Public</option>
-									<option value="Nationality">Private</option>
-								</select>
+		            	<div class="form-group">
+							<label>Currently Studying</label>
+                            <div class="radio">
+                                <label>
+                                	<input type="radio" name="currently_studying_type" value="u">University  / Bachelor's
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                	<input type="radio" name="currently_studying_type" value="c">College
+                                </label>
+                            </div>
+						</div>
+						<script type="text/javascript">
+							function preparereCurrentStudyType(){
+								var radioObj=$('input[type=radio][name=currently_studying_type]:checked')
+							    if (radioObj.val() == 'u') {
+							    	$('select[name=college_name]').closest(".form-group").hide();
+							    	$('select[name=university_name]').closest(".form-group").show();
+							    }else if (radioObj.val() == 'c'){
+							        $('select[name=college_name]').closest(".form-group").show();
+							    	$('select[name=university_name]').closest(".form-group").hide();
+							    } else {
+							    	$('select[name=college_name]').closest(".form-group").hide();
+							    	$('select[name=university_name]').closest(".form-group").hide();
+							    }
+							}
+							$(function(){
+								$('input[type=radio][name=currently_studying_type]').change(preparereCurrentStudyType);
+								preparereCurrentStudyType();
+							});
+						</script>
+		            	<div class="form-group">
+							<label>College Name</label>
+							<select name="college_name" class="form-control">
+								<option value="Address">Amman College</option>
+								<option value="Address">Amman Engineering Technology College</option>
+								<option value="Address">Princess Alia College </option>
+								<option value="Address"> Salt College</option>
+								<option value="Address"> Zarqa Public College</option>
+								<option value="Address"> Irbid  College</option>
+								<option value="Address"> Al Husun College</option>
+								<option value="Address"> Al Karak College</option>
+								<option value="Address"> Ajloun College</option>
+								<option value="Address">Tafila College </option>
+								<option value="Address"> Ma’an College</option>
+								<option value="Address"> Shobak College</option>
+								<option value="Address"> Dawa and Religion Fundamentals College</option>
+								<option value="Address"> Royal Jordanian Geographic Center College</option>
+								<option value="Address"> Islamic Sciences College</option>
+								<option value="Address"> Princess Rahma Social Work College</option>
+								<option value="Address"> Queen Noor College</option>
+								<option value="Address"> Aqaba College</option>
+								<option value="Address">AlQadisia College</option>
+								<option value="Address"> Khawarizmi College</option>
+								<option value="Address">Amman Community College</option>
+								<option value="Address"> Arab College</option>
+								<option value="Address">Queen Alia College</option>
+								<option value="Address"> Al Quds College</option>
+								<option value="Address">AlAndalus College</option>
+								<option value="Address">Intermediate University College</option>
+								<option value="Address"> Hiteen College</option>
+								<option value="Address"> Princess Tharwat College</option>
+								<option value="Address"> Islamic Community College</option>
+								<option value="Address"> Qurtoba College</option>
+								<option value="Address">Zarqa Private College</option>
+								<option value="Address"> Granada College</option>
+								<option value="Address">Alrazi College</option>
+								<option value="Address"> Ibn Khaldun College</option>
+								<option value="Address">Mafraq Private College</option>
+								<option value="Address">Jordan Applied University College Of Hospitality & Tourism</option>
+								<option value="Address">Banking Studies College</option>
+								<option value="Address">Jordanian College for Science and Technology</option>
+								<option value="Address"> Jordanian Canadian College</option>
+								<option value="Address"> Complimentary Medical Professions College</option>
+								<option value="Address"> Rufaida Alaslamiya College</option>
+								<option value="Address">Nusaiba Almaznia College</option>
+								<option value="Address"> Medical Services College</option>
+								<option value="Address"> Shareef Nasser Bin Jameel Communications College </option>
+								<option value="Address"> Prince Hasan Islamic Sciences College </option>
+								<option value="Address"> Prince Hussein Bin Abdallah College</option>
+								<option value="Address">Prince Faisal College</option>
+								<option value="Address"> Wadi Alseer College</option>
+								<option value="Address">Amman Training College</option>			
+							</select>
 
-							</div>
-							<div class="form-group">
-								<label>Type of Study</label>
-								<select class="form-control">
-									<option value="Nationality">Competitive Stream</option>
-									<option value="Nationality">Parallel Stream</option>
-									<option value="Nationality">International Stream</option>	
-								</select>
-							</div>
-							<!-- Major Auto Complete (we need to have the option of adding majors) -->
-							<div class="form-group">
-								<label>Univrsity / College ID</label>						
-								<input type="number"  class="form-control">
-							</div>
-							<div class="form-group">
-								<label>System Password </label>
-								<input type="text" name="firstname"  class="form-control">
-								
-							</div>
-							<div class="form-group">
-								<label>Starting Semester</label>
-								<select class="form-control">
-									<option value="Nationality">First Semester</option>
-									<option value="Nationality">Second Semester</option>
-									<option value="Nationality">Summer Semester</option>	
-								</select>
-							</div>
-							<div class="form-group">
-								<label>Starting Year starting 2005/2006 ---- 2011/2012</label>
-								<input type="dateyear" name="year"  class="form-control" >
-							</div>
-							<div class="form-group">
-								<label>Expected Graduation Semester</label>
-								<select class="form-control">
-									<option value="Nationality">First Semester</option>
-									<option value="Nationality">Second Semester</option>
-									<option value="Nationality">Summer Semester</option>	
-								</select>
-								
-							</div>
-							<div class="form-group">
-								<label>Expected Graduation Year</label>
-								<input type="dateyear" name="year"   class="form-control">
-							</div>
+						</div>		
+                        <div class="form-group">
+                        <!--(If University get Drop Down of university list from below, If College get drop down of colleges from below) -->
+                        	<label>University  / Bachelor's</label>
+							<select name="university_name" class="form-control">
+								<option value="Address">Tafila Technical University</option>
+								<option value="Address">Mutah University</option>
+								<option value="Address">Ajloun National University</option>
+								<option value="Address">Al al-Bayt University</option>
+								<option value="Address"> Al-Ahliyya Amman University</option>
+								<option value="Address">Al-Balqa' Applied University</option>
+								<option value="Address"> Al-Hussein Bin Talal University</option>
+								<option value="Address">Al-Zaytoonah University</option>
+								<option value="Address"> American University of Madaba</option>
+								<option value="Address">Amman Arab University </option>
+								<option value="Address">Applied Science Private University </option>
+								<option value="Address">Arab Academy for Banking and Financial Sciences</option>
+								<option value="Address"> Arab Open University </option>
+								<option value="Address"> German Jordanian University </option>
+								<option value="Address"> Irbid National University </option>
+								<option value="Address"> Israa' University</option>
+								<option value="Address">Jadara University</option>
+								<option value="Address">Jerash Private University</option>
+								<option value="Address">Jordan Academy of Music</option>
+								<option value="Address">Jordan Applied University</option>
+								<option value="Address">College of Hospitality and Toursim Education</option>
+								<option value="Address">Jordan University of Science and Technology</option>
+								<option value="Address"> Middle East University</option>
+								<option value="Address">Philadelphia University</option>
+								<option value="Address"> Princess Sumaya University for Technology</option>
+								<option value="Address"> Red Sea Institute of Cinematic Arts</option>
+								<option value="Address">The Hashemite University</option>
+								<option value="Address">The World Islamic Sciences and Education University</option>
+								<option value="Address">University of Jordan</option>
+								<option value="Address"> University of Petra</option>
+								<option value="Address">Yarmouk University</option>
+								<option value="Address"> Zarqa University</option>
+								<option value="Address"> Faculty of Educational Sciences and Arts</option>
+							</select>
+						</div>
+		            	<div class="form-group">
+							<label>University / College Type</label>
+                            <div class="radio">
+                                <label>
+                                	<input type="radio" name="institution_type" value="1">Public
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                	<input type="radio" name="institution_type" value="2">Private
+                                </label>
+                            </div>
+						</div>
+						<script type="text/javascript">
+							function preparereInstitutionType(){
+								var radioObj=$('input[type=radio][name=institution_type]:checked')
+						        if (radioObj.val() == '1') {
+						            $(".js_type_of_study").show();
+						        }else{
+						            $(".js_type_of_study").hide();
+						        }
+							}
+						    $(function(){
+						    	$('input[type=radio][name=institution_type]').change(preparereInstitutionType);
+						    	preparereInstitutionType();
+						    });
+						</script>
+						<div class="form-group js_type_of_study">
+							<label>Type of Study</label>
+							<select class="form-control">
+								<option value="Nationality">Competitive Stream</option>
+								<option value="Nationality">Parallel Stream</option>
+								<option value="Nationality">International Stream</option>	
+							</select>
+						</div>
+						<!-- Major Auto Complete (we need to have the option of adding majors) -->
+						<div class="form-group">
+							<label>Univrsity / College ID</label>						
+							<input type="number"  class="form-control">
+						</div>
+						<div class="form-group">
+							<label>System Password </label>
+							<input type="text" name="firstname"  class="form-control">
+							
+						</div>
+						<div class="form-group">
+							<label>Starting Semester</label>
+							<select class="form-control">
+								<option value="Nationality">First Semester</option>
+								<option value="Nationality">Second Semester</option>
+								<option value="Nationality">Summer Semester</option>	
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Starting Year starting 2005/2006 ---- 2011/2012</label>
+							<input type="dateyear" name="year"  class="form-control" >
+						</div>
+						<div class="form-group">
+							<label>Expected Graduation Semester</label>
+							<select class="form-control">
+								<option value="Nationality">First Semester</option>
+								<option value="Nationality">Second Semester</option>
+								<option value="Nationality">Summer Semester</option>	
+							</select>
+							
+						</div>
+						<div class="form-group">
+							<label>Expected Graduation Year</label>
+							<input type="dateyear" name="year"   class="form-control">
+						</div>
                     </div>
                     <!-- /.col-lg-6 (nested) -->
                 </div>
