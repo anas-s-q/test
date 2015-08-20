@@ -6,28 +6,26 @@
                Community Service Schedule
             </div>
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form role="form" type="get" action="/dardashat-attendance/">
-                            <div class="form-group">
-							<!--number-->
+            	<form role="form" type="get" action="/dardashat-attendance/">
+                	<div class="row">
+                    	<div class="col-lg-6">
+							<div class="input-group ">
 								<label>Starting Date</label>
-							</div>
-							<div class="input-group date">
+								<div class="input-group date">
 								<input type="text" class="form-control">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-th"></i>
 								</span>
+								</div>
 							</div>
-							<div class="form-group">
-							<!--number-->
+							<div class="input-group ">
 								<label>End Date</label>
-							</div>
-							<div class="input-group date">
-								<input type="text" class="form-control">
-								<span class="input-group-addon">
-									<i class="glyphicon glyphicon-th"></i>
-								</span>
+								<div class="input-group date">
+									<input type="text" class="form-control">
+									<span class="input-group-addon">
+										<i class="glyphicon glyphicon-th"></i>
+									</span>
+								</div>
 							</div>
 							<div class="form-group">
 								<label>Semester</label>
@@ -44,14 +42,84 @@
 							<!-- tixt box  If Youth or Community Add Type: Text-->
 							<div class="form-group">
 								<label>Program</label>
-
-								<input type="text" name="firstname"  class="form-control">	
+								<select class="form-control" name="program_type">
+									<option value="1">Child Program</option>
+									<option value="2">Youth Program</option>
+									<option value="3">Community Program</option>
+								</select>	
+							</div>
+							<div class="form-group js_program_sub_type">
+								<label>Type</label>
+								<input type="text" name="program_sub_type"  class="form-control">	
+							</div>
+							<div class="form-group js_program_component">
+								<label>Component</label>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="1">Child Literature
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="2">Creative Arts
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="3">Sports
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="4">Creative Sciences
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="5">Literacy
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="6">Academic Support
+	                                </label>
+                                </div>
+								<div class="radio">
+	                                <label>
+	                                	<input type="radio" name="program_component" value="7">Other
+	                                </label>
+                                </div>
+							</div>
+                           <script type="text/javascript">
+                                function preparereFacilitatorSource(){
+                                    var radioObj=$('select[name=program_type]')
+                                    if (radioObj.val() == '2' || radioObj.val() == '3') {
+                                        $(".js_program_sub_type").show();
+                                        $(".js_program_component").hide();
+                                    }else{
+                                        $(".js_program_sub_type").hide();
+                                        $(".js_program_component").show();
+                                    }
+                                }
+                                $(function(){
+                                    $('select[name=program_type]').change(preparereFacilitatorSource);
+                                    preparereFacilitatorSource();
+                                });
+                            </script>
+							<div class="form-group">
+								<label>Reach </label>										 
+								<input type="number"  class="form-control">
 							</div>
 							<div class="form-group">
-								<label>Component</label>
-
-								<input type="text" name="firstname"  class="form-control">	
+                                <label>Material</label>
+								<input type="text" name="name" class="form-control">
 							</div>
+							<div class="form-group">
+                                <label>Notes</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
 							<div class="form-group">	
 								<label>Location</label>
 								<select class="form-control">
@@ -100,7 +168,7 @@
 							</div>
 							<div class="form-group">
 								<label>Time 1</label>										 
-								<input type="number"  class="form-control">
+								<input type="time"  class="form-control">
 							</div>
 							<div class="form-group">
 								<label> Day 2</label>										 
@@ -108,7 +176,7 @@
 							</div>
 							<div class="form-group">
 								<label>Time 2</label>										 
-								<input type="number"  class="form-control">
+								<input type="time"  class="form-control">
 							</div>
 							<div class="form-group">
 								<label> Day 3</label>										 
@@ -116,14 +184,12 @@
 							</div>
 							<div class="form-group">
 								<label>Time 3 </label>										 
-								<input type="number"  class="form-control">
+								<input type="time"  class="form-control">
 							</div>
 							<div class="form-group">
 								<label>Age group</label>										 
 								<input type="number"  class="form-control">
 							</div>
-
-
 							<!-- stuodent -->
 							<div class="form-group">
 								<label>Scholars </label> 
@@ -132,18 +198,6 @@
 									<option value="Address">Unique</option>				
 								</select>
 							</div>
-							<div class="form-group">
-								<label>Reach </label>										 
-								<input type="number"  class="form-control">
-							</div>
-							<div class="form-group">
-                                <label>Material</label>
-								<input type="text" name="name" class="form-control">
-							</div>
-							<div class="form-group">
-                                <label>Notes</label>
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
                             <button class="btn btn-primary">Add</button>
                         </form>
                     </div>

@@ -6,43 +6,85 @@
                Evaluation
             </div>
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form role="form" type="get" action="/dardashat-attendance/">
-                            <div class="form-group">
-	                            <label>Scholar</label>
-								<select class="form-control">
-									<option value="Address">All Current Scholars </option>
-								</select>							
+            	<form role="form" type="get" action="/dardashat-attendance/">
+                	<div class="row">
+                    	<div class="col-lg-6">
+					        <div class="panel panel-default">
+					            <div class="panel-heading">
+					            	Select Scholar
+					            </div>
+					            <div class="panel-body">
+		                            <div class="form-group">
+			                            <label>Scholar</label>
+										<select class="form-control">
+											<option value="Address">All Current Scholars </option>
+										</select>							
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-	                            <label>Payment For</label>
-								<select class="form-control">
-									<option value="Address">First Semester </option>
-									<option value="Address"> Second Semester</option>
-									<option value="Nationality">Summer Semester</option>
-								</select>							
+							<div class="panel panel-default">
+							    <div class="panel-heading">
+							       Payment For
+							    </div>
+							    <div class="panel-body">
+									<div class="form-group">
+			                            <label>Semester</label>
+										<select class="form-control">
+											<option value="Address">First Semester </option>
+											<option value="Address"> Second Semester</option>
+											<option value="Nationality">Summer Semester</option>
+										</select>							
+									</div>
+									<div class="form-group">
+										<label> Year</label>
+										<input type="dateyear" name="year"  min = "1900" class="form-control">								
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<label> Year</label>
-								<input type="dateyear" name="year"  min = "1900" class="form-control">								
+							<div class="panel panel-default">
+							    <div class="panel-heading">
+							       Evaluation of
+							    </div>
+							    <div class="panel-body">
+									<div class="form-group">
+			                            <label>Semester</label>
+										<select class="form-control">
+											<option value="Address">First Semester for Student </option>
+											<option value="Address">First Semester </option>
+											<option value="Address"> Second Semester</option>
+											<option value="Nationality">Summer Semester</option>
+										</select>							
+									</div>
+									<div class="form-group">
+										<label> Year</label>
+										<input type="number" name="year"  min = "2002" class="form-control">
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-	                            <label>Evaluation of  </label>
-								<select class="form-control">
-									<option value="Address">First Semester for Student </option>
-									<option value="Address">First Semester </option>
-									<option value="Address"> Second Semester</option>
-									<option value="Nationality">Summer Semester</option>
-								</select>							
-							</div>
-							<div class="form-group">
-								<label> Year</label>
-								<input type="dateyear" name="year"  min = "1900" class="form-control">								
-							</div>
-							<div class="form-group">
-								<label>Period of Evaluation</label>
-								<input type="dateyear" name="year"  min = "1900" class="form-control">								
+							<div class="panel panel-default">
+							    <div class="panel-heading">
+							       Period of Evaluation
+							    </div>
+							    <div class="panel-body">
+									<div class="form-group">
+										<label>Start</label>
+										<div class="input-group date">
+											<input type="text" class="form-control">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-th"></i>
+											</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label>End</label>
+										<div class="input-group date">
+											<input type="text" class="form-control">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-th"></i>
+											</span>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="form-group">
 								<label>Hours To Register by Ruwwad</label>					
@@ -59,19 +101,137 @@
 									<option value="Address"> 50%</option>
 								</select>							
 							</div>
-							<button class="btn btn-primary">Add</button>
 							<!--CALCULATE-->
-							
-
-
-
-
-
-                        </form>											
-                    </div>
-                    <!-- /.col-lg-6 (nested) -->
-                </div>
-                <!-- /.row (nested) -->
+	                    </div>
+	                    <!-- /.col-lg-6 (nested) -->
+						<div class="col-lg-6">
+						    <div class="panel panel-default">
+						        <div class="panel-heading">
+						           Calculations
+						        </div>
+						        <!-- /.panel-heading -->
+						        <div class="panel-body">
+						            <div class="table-responsive">
+						                <table class="table table-hover">
+						                    <thead>
+						                        <tr>
+						                            <td width="30%"></td>
+						                            <td></td>
+						                        </tr>
+						                    </thead>
+						                    <tbody>
+						                        <tr>
+						                            <td>Community Service Hours Active during period</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Community Service Hours Done During Period</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Community Service Percentage (50%)</td>
+						                            <td>Automatic Calculation/td>
+						                        </tr>
+						                        <tr>
+						                            <td>Enrichment Program + Dardashat Sessions during period</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Enrichment Program + Dardashat Sessions attendance</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Dardashat Percentage (30%)</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                        <tr>
+						                            <td>GPA Percentage (20%)</td>
+						                            <td>Automatic pick up from latest in Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Difference in Registered/Paid</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Failed/Dropped Hours</td>
+						                            <td>Automatic pick up from Student Profile</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Evaluation Percentage</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Amount for Registered Hours</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Amount for Paid Hours</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Amount for Paid Hours with Evaluation</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                        <tr>
+						                            <td>Amount Scholar Should Pay</td>
+						                            <td>Automatic Calculation</td>
+						                        </tr>
+						                    </tbody>
+						                </table>
+						            </div>
+						            <!-- /.table-responsive -->
+						        </div>
+						        <!-- /.panel-body -->
+						    </div>
+						    <!-- /.panel -->
+						</div>
+						<div class="col-lg-6">
+						    <div class="panel panel-default">
+						        <div class="panel-heading">
+						        	Confirm Amount
+						        </div>
+						        <!-- /.panel-heading -->
+						        <div class="panel-body">
+									<div class="form-group">
+			                            <label>Paid Amount</label>
+										<select name="paid_amount_type" class="form-control">
+											<option value="1">As Calculated</option>
+											<option value="2">Other</option>
+										</select>							
+									</div>
+									<div class="form-group js_other_paid_amount">
+										<label>Amount</label>
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+									<div class="form-group js_other_paid_amount">
+										<label>Reason</label>
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+		                           <script type="text/javascript">
+		                                function preparereotherPaidAmount(){
+		                                    var radioObj=$('select[name=paid_amount_type]')
+		                                    if (radioObj.val() == '2') {
+		                                        $(".js_other_paid_amount").show();
+		                                    }else{
+		                                        $(".js_other_paid_amount").hide();
+		                                    }
+		                                }
+		                                $(function(){
+		                                    $('select[name=paid_amount_type]').change(preparereotherPaidAmount);
+		                                    preparereotherPaidAmount();
+		                                });
+		                            </script>
+									<div class="form-group">
+										<label>Notes</label>
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+									<button class="btn btn-primary">Confirm</button>
+						        </div>
+						    </div>
+						</div>
+	                </div>
+	                <!-- /.row (nested) -->
+				</form>
             </div>
             <!-- /.panel-body -->
         </div>
